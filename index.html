@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMYA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Heyy!! Anya gupta will you be my FOREVER(Try clicking on NO)</h1>
+        
+        <div id="initial-checkboxes">
+            <label>
+                <input type="checkbox" id="yes" /> Yes
+            </label>
+            <label id="noLabel">
+                <input type="checkbox" id="no" /> No
+            </label>
+        </div>
+        
+        <!-- Questions will appear here after clicking "Yes" -->
+        <div id="questions-container" style="display: none;">
+            <div class="question" id="question1" style="display: none;">
+                <p>Question 1: What I like the most in you?</p>
+                <label><input type="radio" name="q1" value="Red" /> Cheeks</label><br>
+                <label><input type="radio" name="q1" value="Blue" /> Eyes</label><br>
+                <label><input type="radio" name="q1" value="Green" /> Smile</label><br>
+                <label><input type="radio" name="q1" value="Yellow" /> Hand</label><br>
+                <button class="next-btn" onclick="checkAnswer('q1', 'Blue', 1)">Next</button>
+                <div id="feedback-q1"></div>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <p>Question 2: Which is my favourite cartoon?</p>
+                <label><input type="radio" name="q2" value="Dog" /> Dragon Ball Z</label><br>
+                <label><input type="radio" name="q2" value="Cat" /> Ben 10</label><br>
+                <label><input type="radio" name="q2" value="Elephant" /> Shinchan</label><br>
+                <label><input type="radio" name="q2" value="Tiger" /> Bayblade</label><br>
+                <button class="next-btn" onclick="checkAnswer('q2', 'Cat', 2)">Next</button>
+                <div id="feedback-q2"></div>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <p>Question 3: What was the first thing we ate together?</p>
+                <label><input type="radio" name="q3" value="Pizza" /> Poha</label><br>
+                <label><input type="radio" name="q3" value="Pasta" /> Donut</label><br>
+                <label><input type="radio" name="q3" value="Burgers" /> Dahi puri</label><br>
+                <label><input type="radio" name="q3" value="Sushi" /> Chocolate</label><br>
+                <button class="next-btn" onclick="checkAnswer('q3', 'Sushi', 3)">Next</button>
+                <div id="feedback-q3"></div>
+            </div>
+            <div class="question" id="question4" style="display: none;">
+                <p>Question 4: What is my favourite meal?</p>
+                <label><input type="radio" name="q4" value="Reading" /> Rajma chawal</label><br>
+                <label><input type="radio" name="q4" value="Traveling" /> Chole bhature</label><br>
+                <label><input type="radio" name="q4" value="Cooking" /> Shahi panner and Naan</label><br>
+                <label><input type="radio" name="q4" value="Gaming" /> Tum</label><br>
+                <button class="next-btn" onclick="checkAnswer('q4', 'Gaming', 4)">Next</button>
+                <div id="feedback-q4"></div>
+            </div>
+            <div class="question" id="question5" style="display: none;">
+                <p>Question 5: On which date you said i love you to me?</p>
+                <label><input type="radio" name="q5" value="Action" /> 4-Jan-2025</label><br>
+                <label><input type="radio" name="q5" value="Romantic" /> 4-Feb-2025</label><br>
+                <label><input type="radio" name="q5" value="Comedy" /> 6-Jan-2025</label><br>
+                <label><input type="radio" name="q5" value="Horror" /> 6-Feb-2025</label><br>
+                <button class="next-btn" onclick="checkAnswer('q5', 'Comedy', 5)">Finish</button>
+                <div id="feedback-q5"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
